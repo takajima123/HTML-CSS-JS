@@ -1,0 +1,108 @@
+*{
+	padding: 5px;
+	margin: 5px:;
+}
+
+body {
+	background: #005580;
+}
+
+/*-- Header --*/
+.head{
+	background: white;
+	border: 20px solid black;
+	padding: 10px 70px;
+	font-size: 30px;
+	text-align: center;
+}
+
+
+/*-- Navbar --*/
+.navbar{
+	background: #37f;
+	border: 5px solid black;
+	padding: 1px 0px;
+	text-align: center;
+
+}
+
+.main-menu li{
+	display: inline-block;
+	width: 150px;
+	margin-left: 10px;
+	border-left: 1px solid transparent;
+	color: black;
+	transistion:.4;
+}
+
+/*-- Sub Menu Main--*/
+.sub-menu-main{
+	display: none;
+	position: absolute;
+	width: 173px;
+	margin-top: 30px;
+	margin-left: 10px;
+	border: 5px solid white;
+	text-align: left;
+	box-shadow: 1px 1px 1px grey;
+}
+
+.sub-menu-main:before{
+	position: absolute;
+	margin: -30px 0px 0px 60px;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 30px solid ;
+	content: "";
+}
+
+.sub-menu-main>li{
+	margin: 0px 0px;
+	padding: 10px;
+	background: #37f;
+
+}
+
+/*-- Sub Menu Parent--*/
+.sub-menu-parent{
+	display: none;
+	position: absolute;
+	width: 173px;
+	margin-top: 30px;
+	margin-left: 120px;
+	border: 5px solid white;
+	text-align: left;
+	box-shadow: 1px 1px 1px grey;
+}
+
+.sub-menu-parent:before{
+	position: absolute;
+	margin: -30px 0px 0px 0px;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 30px solid ;
+	content: "";
+}
+
+.sub-menu-parent>li{
+	margin: 0px 0px;
+	padding: 10px;
+	background: #37f;
+}
+
+
+
+/*-- Hover --*/
+.main-menu li:hover, 
+	.sub-menu-main li:hover,
+		.sub-menu-parent li:hover{
+		background: #35c;
+		
+}
+
+/*-- Submenu display--*/
+.main-menu li:hover .sub-menu-main,
+	.sub-menu-main li:hover .sub-menu-parent{
+		display: block;
+}
+
