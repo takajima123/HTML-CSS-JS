@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- Style Sheet links -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    </link>
+    <title>Carousel</title>
+  </head>
+  <body>
+    <div class="head">
+      Carousel
+    </div>
+
+    <div class="container">
+
+      <!-- Slides -->
+      <ul id="slides">
+        <li class="slide showing">Slide 1</li>
+        <li class="slide">Slide 2</li>
+        <li class="slide">Slide 3</li>
+        <li class="slide">Slide 4</li>
+        <li class="slide">Slide 5</li>
+        <li class="slide">Slide 6</li>
+      </ul>
+
+      <!-- Dot display and function -->
+      <div class="active-indicator">
+        <li class="dot dot-Higlight" onclick="slideSelected(0)"></li>
+        <li class="dot" onclick="slideSelected(1)"></li>
+        <li class="dot" onclick="slideSelected(2)"></li>
+        <li class="dot" onclick="slideSelected(3)"></li>
+        <li class="dot" onclick="slideSelected(4)"></li>
+        <li class="dot" onclick="slideSelected(5)"></li>
+      </div>      
+
+      <!-- Button Next/Previous -->
+      <button class="controls" id="arrow-left">&lt;</button>
+      <button class="controls" id="arrow-right">&gt;</button>
+
+    </div>
+
+    <!-- Script Links -->
+    <script type="text/javascript" src="js/carousel.js">
+    </script>
+
+  </body>
+</html>
+
